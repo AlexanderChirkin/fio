@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <title>Main</title>
+</head>
+<body>
+ {{ title }}
+<form action="/main" method="post" class="form-contact">
+    <p><label>Name: </label> <input type="text" name="username" value="" required> </p>
+    <p><label>Role: </label> <input type="text" name="userrole" value="defoult" required> </p>
+    <p><input type="submit" value="Send"></p>
+</form>
+</body>
+</html>
